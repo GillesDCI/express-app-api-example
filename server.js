@@ -19,9 +19,6 @@ app.get('/users', (req, res)=> {
     return res.send(people);
 })
 
-
-
-
 //GET middleware using a request parameter :name --> surfing from localhost:3001/users/Test
 app.get('/users/:name', (req, res) => {
     return res.json({result:req.params.name})
